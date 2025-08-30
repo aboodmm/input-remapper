@@ -53,3 +53,8 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+CMakeFiles
+build.ninja
+.ninja*
+CMakeCache*
