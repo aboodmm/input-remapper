@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.15)
 project(mapper)
 
 find_package(SDL3 REQUIRED CONFIG COMPONENTS SDL3-shared)
-find_package(SDL3_image REQUIRED CONFIG COMPONENTS)
+find_package(SDL3_image REQUIRED)
 
 add_executable(mapper WIN32 mapper.c)
 target_link_libraries(mapper PRIVATE SDL3_image::SDL3_image SDL3::SDL3)
